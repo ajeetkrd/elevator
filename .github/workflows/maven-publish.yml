@@ -33,8 +33,7 @@ jobs:
       run: mvn -B package -Pdev --file pom.xml
 
     - name: Publish to GitHub Packages Apache Maven
-    - run: echo ${{ github.token }}
-    - run: echo ${{ github.workspace }}
-    - run: mvn deploy -Pdev
+    - run: echo ${{ github.token }}  ${{ github.workspace }}
+
       env:
         GITHUB_TOKEN: ${{ github.token }}
