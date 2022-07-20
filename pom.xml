@@ -99,6 +99,9 @@
             <id>dev</id>
             <name>dev</name>
             <url>https://github.com/ajeetkrd/elevator/raw/master/releases</url>
+		      <username>ajeetkrd</username>
+    
+        <password>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</password> 
         </repository>
 	<snapshotRepository>
             <id>elevator-snapshot</id>
