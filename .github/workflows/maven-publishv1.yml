@@ -42,3 +42,9 @@ jobs:
       run: mvn deploy -Pdev -s $GITHUB_WORKSPACE/settings.xml
       env:
         GITHUB_TOKEN: ${{ github.token }}
+        
+    - name: Save jar
+      uses: actions/upload-artifact@v3
+      with:
+        name: upload jar
+        path: target/elevator.jar
