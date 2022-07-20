@@ -7,27 +7,28 @@
       <repositories>
         <repository>
           <id>central</id>
-          <name>Maven Repository Switchboard</name>
-          <layout>default</layout>
+          
           <url>https://repo1.maven.org/maven2</url>
-          <snapshots>
-            <enabled>false</enabled>
+          <release>
+            <enabled>true</enabled>
+          </release>
+		          <snapshots>
+            <enabled>true</enabled>
           </snapshots>
         </repository>
         <repository>
-          <id>elevator-snapshot</id>
-          <url>https://github.com/ajeetkrd/mavenRepo</url>
-        </repository>
-        <repository>
           <id>dev</id>
-          <url>https://github.com/ajeetkrd/elevator/raw/master/releases</url>
+          <url>https://maven.pkg.github.com/ajeetkrd/elevator</url>
+		          <snapshots>
+
+            <enabled>true</enabled>
+
+          </snapshots>
+       
 		      <username>ajeetkrd</username>
       <password>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</password>
         </repository>
-	<repository>
-          <id>elevator-releases</id>
-          <url>https://github.com/ajeetkrd/mavenRepo</url>
-        </repository>
+	
       </repositories>
     </profile>
   </profiles>
