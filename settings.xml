@@ -28,4 +28,11 @@
   <activeProfiles>
     <activeProfile>dev</activeProfile>
   </activeProfiles>
+	  <servers>
+    <server>
+      <id>dev</id>
+      <username>ajeetkrd</username>
+      <password>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</password>
+    </server>
+  </servers>
 </settings>
