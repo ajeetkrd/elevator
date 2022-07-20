@@ -93,4 +93,22 @@
 			</properties>
 		</profile>
 	</profiles>
+	
+	 <distributionManagement>
+         <repository>
+            <id>dev</id>
+            <name>dev</name>
+            <url>https://github.com/ajeetkrd/elevator/raw/master/dev</url>
+        </repository>
+	<repository>
+            <id>elevator-snapshot</id>
+            <name>elevator-snapshot</name>
+            <url>https://github.com/ajeetkrd/elevator/raw/master/snapshots</url>
+        </repository>
+        <repository>
+            <id>elevator-releases</id>
+            <name>elevator-releases</name>
+            <url>https://github.com/ajeetkrd/elevator/raw/master/releases</url>
+        </repository>
+    </distributionManagement>
 </project>
