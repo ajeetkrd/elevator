@@ -98,7 +98,7 @@
          <repository>
             <id>dev</id>
             <name>dev</name>
-            <url>https://github.com/ajeetkrd/mavenRepo</url>
+            
         </repository>
 	<snapshotRepository>
             <id>elevator-snapshot</id>
