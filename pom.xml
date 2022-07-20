@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.hcl</groupId>
 	<artifactId>elevator</artifactId>
-	<version>v2</version>
+	<version>v3</version>
 	<name>Elevator Management</name>
 	<description>Elevator Management Project</description>
 	<properties>
@@ -97,7 +97,7 @@
 				<filtering>true</filtering>
 			</resource>
 		</resources>
-		<finalName>${project.artifactId}-${project.version}-${maven.build.timestamp}</finalName>
+		<finalName>${project.artifactId}-${project.version}</finalName>
 	
 	
 	
