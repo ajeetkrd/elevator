@@ -30,7 +30,13 @@ jobs:
       run: mvn -B -Pdev package --file pom.xml
     
     - name: Publish to GitHub Packages Apache Maven
-      run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
+    - run: echo $GITHUB_WORKSPACE 
+    - run: echo ${{ github.token }}
+    - run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
+    - uses: actions/upload-artifact@v3
+      with:
+       name: Package
+       path: staging
       env:
         GITHUB_TOKEN: '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'
     
