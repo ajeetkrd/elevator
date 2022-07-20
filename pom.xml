@@ -47,7 +47,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	<finalName>${project.artifactId}-${project.version}-${maven.build.timestamp}</finalName>
+	
 	<build>
 		<plugins>
 			<plugin>
@@ -70,6 +70,7 @@
 				<filtering>true</filtering>
 			</resource>
 		</resources>
+		<finalName>${project.artifactId}-${project.version}-${maven.build.timestamp}</finalName>
 	</build>
 	<profiles>
 		<profile>
