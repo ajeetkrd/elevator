@@ -6,6 +6,6 @@ COPY src /workspace/src
 RUN mvn -B package -Pdev --file pom.xml -DskipTests
 
 FROM openjdk:14-slim
-COPY --from=build /workspace/target/*.jar app.jar
+COPY --from=build /workspace/target/*.jar /app
 EXPOSE 6379
-ENTRYPOINT ["java","-jar","app.jar"]
+ENTRYPOINT ["java","-jar","app/app.jar"]
